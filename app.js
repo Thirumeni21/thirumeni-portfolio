@@ -1,4 +1,4 @@
-// --- THIRUMENI O V PORTFOLIO ENGINE (GMAIL COMPOSE REDIRECT & AUTOMATIC EMAIL COPY) ---
+// --- THIRUMENI O V PORTFOLIO ENGINE (SOFTWARES KNOWN SECTION TITLE UPDATE) ---
 
 const personalInfo = {
   name: "Thirumeni O V",
@@ -299,11 +299,11 @@ function renderApp() {
         </div>
       </section>
 
-      <!-- SOFTWARE MASTERY SECTION -->
+      <!-- SOFTWARES KNOWN SECTION (RENAMED FROM SOFTWARE MASTERY) -->
       <section id="software" class="section-container">
         <div class="section-header">
           <span class="section-tag">POST-PRODUCTION &amp; DESIGN TOOLKIT</span>
-          <h2 class="section-title">SOFTWARE <span class="text-lavender">MASTERY</span></h2>
+          <h2 class="section-title">SOFTWARES <span class="text-lavender">KNOWN</span></h2>
         </div>
 
         <div class="software-grid-clean">
@@ -468,7 +468,6 @@ window.copyEmail = function() {
   showToast(`Copied email (${personalInfo.email}) to clipboard!`);
 };
 
-// GMAIL COMPOSE REDIRECT FUNCTION WITH AUTOMATIC CLIPBOARD COPY
 window.openGmailCompose = function() {
   navigator.clipboard.writeText(personalInfo.email);
   showToast(`Copied email (${personalInfo.email}) & opening Gmail...`);
@@ -491,7 +490,6 @@ window.handleFormSubmit = function(e) {
   const subject = encodeURIComponent(`Project Inquiry: ${projectType}`);
   const body = encodeURIComponent(`Hi Thirumeni,\n\nMy name is ${name} (${email}).\n\nProject Category: ${projectType}\n\nMessage:\n${message}\n`);
   
-  // Copy email and open Gmail compose with prefilled subject & message
   navigator.clipboard.writeText(personalInfo.email);
   showToast("Opening Gmail Compose with inquiry details...");
   setTimeout(() => {
