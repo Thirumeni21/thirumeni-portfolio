@@ -7,7 +7,7 @@ const personalInfo = {
   location: "India / Worldwide Remote",
   photoUrl: "https://lh3.googleusercontent.com/d/15jHZFGvpTLYUAIEC7Ls6zt0DnPiT91vL",
   photoFallback: "https://drive.google.com/thumbnail?id=15jHZFGvpTLYUAIEC7Ls6zt0DnPiT91vL&sz=w1000",
-  bio: "Creative Video Editor and UI/UX Designer proficient in DaVinci Resolve, Descript, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut. Specializing in visual storytelling, 2D map animations, photo editing, and UI/UX design.",
+  bio: "Creative Video Editor and UI/UX Designer proficient in DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut. Specializing in visual storytelling, 2D map animations, photo editing, and UI/UX design.",
   status: "Available for Remote & Freelance"
 };
 
@@ -18,9 +18,9 @@ const projects = [
     driveUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/view?usp=sharing",
     previewUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/preview",
     category: "video",
-    categoryName: "Reel",
-    software: [],
-    description: "A short-form reel edit.",
+    categoryName: "Reel 1",
+    software: ["DaVinci Resolve"],
+    description: "A polished short-form reel edit focused on pacing, rhythm, and visual storytelling.",
     isFigma: false
   },
   {
@@ -29,9 +29,9 @@ const projects = [
     driveUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/view?usp=sharing",
     previewUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/preview",
     category: "video",
-    categoryName: "Reel",
-    software: [],
-    description: "A second short-form reel edit.",
+    categoryName: "Reel 2",
+    software: ["DaVinci Resolve"],
+    description: "A second short-form reel edit shaped around dynamic cuts, timing, and visual flow.",
     isFigma: false
   },
   {
@@ -39,10 +39,10 @@ const projects = [
     title: "AKA – YT 1",
     driveUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/view?usp=drive_link",
     previewUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/preview",
-    category: "animation",
-    categoryName: "Motion Graphic",
-    software: [],
-    description: "A motion graphic video for YouTube.",
+    category: "video",
+    categoryName: "YouTube Video",
+    software: ["DaVinci Resolve", "Claude"],
+    description: "A YouTube motion graphic combining editorial pacing, animated visuals, and AI-assisted creative direction.",
     isFigma: false
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     category: "animation",
     categoryName: "2D Animation",
     software: ["DaVinci Resolve"],
-    description: "Map Animation video showcasing dynamic route visualization, location markers, and custom motion graphics.",
+    description: "A map animation showcasing dynamic route visualization, location markers, and custom motion graphics.",
     isFigma: false
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     category: "uiux",
     categoryName: "UI/UX Design",
     software: ["Figma"],
-    description: "Redesign of the IRCTC booking web interface focusing on user experience, modern layout, and accessibility.",
+    description: "A modern IRCTC booking interface redesign focused on user experience, layout clarity, and accessibility.",
     isFigma: true
   },
   {
@@ -73,7 +73,7 @@ const projects = [
     category: "uiux",
     categoryName: "UI/UX Design",
     software: ["Figma"],
-    description: "Fan Wiki of Netflix series Stranger Things which won us 2nd place and cash prize of Rs.5,000.",
+    description: "A Stranger Things fan wiki prototype that won second place and a cash prize of Rs.5,000.",
     isFigma: true
   }
 ];
@@ -81,33 +81,33 @@ const projects = [
 const services = [
   {
     num: "01",
-    title: "UI/UX Design",
-    description: "Designing modern, intuitive web & mobile application interfaces, wireframes, and interactive Figma prototypes.",
-    tags: ["Figma", "UI/UX Design", "Wireframing"]
+    title: "Visual Storytelling & Video Editing",
+    description: "Crafting narrative edits with strong pacing, sound design, color, and visual rhythm.",
+    tags: ["DaVinci Resolve", "Story Editing", "Audio Polish"]
   },
   {
     num: "02",
-    title: "2D Animations",
-    description: "Creating dynamic 2D animations including route & map animations, kinetic motion graphics, and visual overlays.",
+    title: "2D Animation",
+    description: "Creating route animations, map visuals, kinetic movement, and polished 2D overlays.",
     tags: ["Map Animation", "2D Motion", "Route Graphics"]
   },
   {
     num: "03",
-    title: "Photo Editing",
-    description: "Color grading, RAW photo enhancement, key visual creation, and thumbnail design using Lightroom & Photoshop.",
-    tags: ["Lightroom", "Photoshop", "Color Balance"]
+    title: "Motion Graphics",
+    description: "Designing expressive motion systems, title treatments, visual effects, and smooth 3D-inspired movement.",
+    tags: ["Motion Design", "3D Motion", "Visual Effects"]
   },
   {
     num: "04",
-    title: "Visual Storytelling & Video Editing",
-    description: "Pacing, narrative flow, sound design, and color grading using DaVinci Resolve & Descript.",
-    tags: ["DaVinci Resolve", "Descript", "Audio Polish"]
+    title: "UI/UX Design",
+    description: "Designing intuitive interfaces, wireframes, and interactive prototypes with clarity and purpose.",
+    tags: ["Figma", "UI/UX Design", "Wireframing"]
   }
 ];
 
 const softwareTools = [
   { name: "DaVinci Resolve", category: "Primary Color & Edit Suite", badgeColor: "#6366f1", badgeLetter: "Dv", desc: "Node Color Grading, Fairlight Audio, Fusion VFX & Cut Page" },
-  { name: "Descript", category: "AI Video & Voice Editing", badgeColor: "#10b981", badgeLetter: "De", desc: "AI Transcript-based Cutting, Voice Synthesis & Studio Sound" },
+  { name: "Claude", category: "AI Creative Assistance", badgeColor: "#d97757", badgeLetter: "Cl", desc: "Creative Direction, Writing Support & Structured Idea Development" },
   { name: "Google Gemini", category: "AI Scripting & Visual Hooks", badgeColor: "#3b82f6", badgeLetter: "Ge", desc: "AI Storyboarding, Content Ideation & Visual Scripting" },
   { name: "Figma", category: "UI/UX & Storyboarding", badgeColor: "#f43f5e", badgeLetter: "Fg", desc: "Interactive Prototypes, UI Layouts & Motion Wireframes" },
   { name: "Adobe XD", category: "Layouts & UI Prototypes", badgeColor: "#d946ef", badgeLetter: "Xd", desc: "Interactive Motion Layouts & Screen Video Prototyping" },
@@ -215,7 +215,7 @@ function renderApp() {
           </h1>
 
           <p class="hero-description">
-            Hi, I'm <strong style="color:#fff;">${personalInfo.name}</strong>. I create commercial video edits, 2D map animations, photo enhancements, and interactive UI/UX designs using DaVinci Resolve, Descript, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.
+            Hi, I'm <strong style="color:#fff;">${personalInfo.name}</strong>. I create commercial video edits, 2D map animations, photo enhancements, and interactive UI/UX designs using DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.
           </p>
 
           <div class="hero-actions">
@@ -397,7 +397,7 @@ function renderApp() {
             <span class="brand-dot"></span>
             <span style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:#fff;">${personalInfo.name}</span>
           </div>
-          <p style="color:var(--accent-silver); max-width:500px;">Visual Storyteller, Video Editor & UI/UX Designer. Specializing in DaVinci Resolve, Descript, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.</p>
+          <p style="color:var(--accent-silver); max-width:500px;">Visual Storyteller, Video Editor & UI/UX Designer. Specializing in DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.</p>
           <div style="font-size:0.8rem; color:var(--accent-silver); opacity:0.6; border-top:1px solid rgba(210,178,240,0.2); padding-top:1.5rem; width:100%;">
             © ${new Date().getFullYear()} ${personalInfo.name}. All rights reserved. Portfolio.
           </div>
