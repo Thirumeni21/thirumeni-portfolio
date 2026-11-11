@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
   /* Awwwards & Dribbble Level Dark Glass Bento Palette */
@@ -6,7 +6,7 @@
   --bg-surface: #120a1c;        /* Rich Dark Violet Surface */
   --bg-card: rgba(210, 178, 240, 0.04); /* Translucent Glass Card */
   --bg-card-hover: rgba(210, 178, 240, 0.09);
-
+  
   --accent-lavender: #d2b2f0;   /* User Color: Pastel Lavender / Neon Lilac */
   --accent-lavender-glow: rgba(210, 178, 240, 0.35);
   --accent-violet: #a855f7;     /* Electric Amethyst Violet */
@@ -17,16 +17,15 @@
   --border-glass: rgba(210, 178, 240, 0.18);
   --border-glass-hover: rgba(210, 178, 240, 0.5);
   --border-glow: rgba(210, 178, 240, 0.8);
-
+  
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 28px;
   --radius-full: 9999px;
 
-  --font-heading: 'Source Sans 3', Arial, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Sans 3', Arial, sans-serif;
-  --font-mono: 'Source Sans 3', Arial, sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
   --shadow-glow: 0 0 35px rgba(210, 178, 240, 0.15);
   --shadow-strong: 0 25px 60px rgba(0, 0, 0, 0.9);
@@ -802,10 +801,4 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes drawerSlideDown {
   from { opacity: 0; transform: translateY(-12px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.hero-title .text-lavender {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
 }
