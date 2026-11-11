@@ -13,8 +13,19 @@ const personalInfo = {
 
 const projects = [
   {
+    id: 3,
+    title: "AKA – YouTube",
+    driveUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/view?usp=drive_link",
+    previewUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/preview",
+    category: "video",
+    categoryName: "YouTube Video",
+    software: ["DaVinci Resolve", "Claude"],
+    description: "A YouTube motion graphic combining editorial pacing, animated visuals, and AI-assisted creative direction.",
+    isFigma: false
+  },
+  {
     id: 1,
-    title: "AKA – Reel 3.2",
+    title: "AKA – Reel 1",
     driveUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/view?usp=sharing",
     previewUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/preview",
     category: "video",
@@ -25,24 +36,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "AKA – Reel 4.2",
+    title: "AKA – Reel 2",
     driveUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/view?usp=sharing",
     previewUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/preview",
     category: "video",
     categoryName: "Reel 2",
     software: ["DaVinci Resolve"],
     description: "A second short-form reel edit shaped around dynamic cuts, timing, and visual flow.",
-    isFigma: false
-  },
-  {
-    id: 3,
-    title: "AKA – YT 1",
-    driveUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/view?usp=drive_link",
-    previewUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/preview",
-    category: "video",
-    categoryName: "YouTube Video",
-    software: ["DaVinci Resolve", "Claude"],
-    description: "A YouTube motion graphic combining editorial pacing, animated visuals, and AI-assisted creative direction.",
     isFigma: false
   },
   {
