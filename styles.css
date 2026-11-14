@@ -2,15 +2,15 @@
 
 :root {
   /* Awwwards & Dribbble Level Dark Glass Bento Palette */
-  --bg-obsidian: #09050d;       /* Deep Obsidian Night Canvas */
-  --bg-surface: #120a1c;        /* Rich Dark Violet Surface */
+  --bg-obsidian: #ffffff;       /* Light Canvas */
+  --bg-surface: #ffffff;        /* Light Surface */
   --bg-card: rgba(210, 178, 240, 0.04); /* Translucent Glass Card */
   --bg-card-hover: rgba(210, 178, 240, 0.09);
   
   --accent-lavender: #d2b2f0;   /* User Color: Pastel Lavender / Neon Lilac */
   --accent-lavender-glow: rgba(210, 178, 240, 0.35);
   --accent-violet: #a855f7;     /* Electric Amethyst Violet */
-  --accent-white: #ffffff;      /* Pure Crisp White */
+  --accent-white: #000000;      /* Pure Crisp Black */
   --accent-silver: #cbd5e1;     /* Soft Silver Body Text */
   --accent-muted: #64748b;
 
@@ -28,7 +28,7 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   --shadow-glow: 0 0 35px rgba(210, 178, 240, 0.15);
-  --shadow-strong: 0 25px 60px rgba(0, 0, 0, 0.9);
+  --shadow-strong: 0 25px 60px rgba(255, 255, 255, 0.9);
 }
 
 * {
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 40%, var(--accent-lavender) 100%);
+  background: linear-gradient(135deg, #000000 40%, var(--accent-lavender) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   z-index: 100;
   padding: 1.4rem 3.5rem;
-  background: rgba(9, 5, 13, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border-glass);
   display: flex;
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.3rem;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background: var(--accent-lavender);
-  color: #09050d;
+  color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 800;
   padding: 0.85rem 1.9rem;
@@ -233,8 +233,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background: #ffffff;
-  color: #09050d;
+  background: #000000;
+  color: #ffffff;
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 35px rgba(210, 178, 240, 0.6);
 }
@@ -278,12 +278,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
 }
 
 .mobile-menu-btn:hover, .mobile-menu-btn:active {
   background: var(--accent-lavender);
-  color: #09050d;
+  color: #ffffff;
   transform: scale(1.06);
   box-shadow: 0 0 20px rgba(210, 178, 240, 0.5);
 }
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 490px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: #120a1c;
+  background: #ffffff;
   border: 1px solid var(--border-glass-hover);
   box-shadow: var(--shadow-glow);
 }
@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
 .tab-btn:hover, .tab-btn.active {
   background: var(--accent-lavender);
   border-color: var(--accent-lavender);
-  color: #09050d;
+  color: #ffffff;
   box-shadow: 0 4px 25px rgba(210, 178, 240, 0.4);
 }
 
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.5rem;
   background: rgba(210, 178, 240, 0.12);
-  color: #ffffff;
+  color: #000000;
   border: 1px solid rgba(210, 178, 240, 0.25);
   font-size: 0.8rem;
   font-weight: 600;
@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(9, 5, 13, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(24px);
   z-index: 1000;
   display: flex;
@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  background: #120a1c;
+  background: #ffffff;
   border: 1px solid var(--border-glass-hover);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -518,7 +518,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal-close-icon {
   background: rgba(210, 178, 240, 0.15);
   border: 1px solid var(--border-glass);
-  color: #fff;
+  color: #000;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -531,14 +531,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-close-icon:hover {
   background: var(--accent-lavender);
-  color: #09050d;
+  color: #ffffff;
 }
 
 .modal-video-frame {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  background: #000;
+  background: #ffffff;
 }
 
 .modal-video-frame iframe {
@@ -557,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  background: #09050d;
+  background: #ffffff;
 }
 
 /* Services Bento Grid */
@@ -610,8 +610,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.1rem;
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.5);
 }
 
 /* Contact Section */
@@ -647,10 +647,10 @@ h1, h2, h3, h4, h5, h6 {
 .form-input, .form-textarea {
   width: 100%;
   padding: 1rem 1.2rem;
-  background: rgba(9, 5, 13, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-sm);
-  color: #fff;
+  color: #000;
   font-family: var(--font-body);
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -673,7 +673,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 30px;
   z-index: 1100;
   background: var(--accent-lavender);
-  color: #09050d;
+  color: #ffffff;
   padding: 0.9rem 1.8rem;
   border-radius: var(--radius-full);
   font-weight: 800;
@@ -753,7 +753,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 72px;
     left: 0;
     width: 100%;
-    background: rgba(9, 5, 13, 0.96);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(28px);
     -webkit-backdrop-filter: blur(28px);
     border-bottom: 1px solid var(--border-glass-hover);
@@ -762,7 +762,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 1.2rem;
     z-index: 99;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.9);
     animation: drawerSlideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -779,7 +779,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .mobile-drawer .nav-link:hover, .mobile-drawer .nav-link.active {
     background: var(--accent-lavender);
-    color: #09050d;
+    color: #ffffff;
     border-color: var(--accent-lavender);
     box-shadow: 0 4px 20px rgba(210, 178, 240, 0.4);
   }

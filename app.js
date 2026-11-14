@@ -209,7 +209,7 @@ function renderApp() {
           <div style="display:flex; justify-content:space-between; align-items:center; background:var(--bg-card); border:1px solid var(--border-glass-hover); padding:1.2rem; border-radius:var(--radius-md); backdrop-filter:blur(20px);">
             <div style="display:flex; align-items:center; gap:0.6rem;">
               <span class="brand-dot"></span>
-              <span style="font-size:0.85rem; color:#fff; font-weight:600;">${personalInfo.status}</span>
+              <span style="font-size:0.85rem; color:#000; font-weight:600;">${personalInfo.status}</span>
             </div>
             <span style="font-family:var(--font-mono); font-size:0.8rem; color:var(--accent-lavender);">DAVINCI &amp; FIGMA</span>
           </div>
@@ -226,7 +226,7 @@ function renderApp() {
           </h1>
 
           <p class="hero-description">
-            Hi, I'm <strong style="color:#fff;">${personalInfo.name}</strong>. I create commercial video edits, 2D map animations, photo enhancements, and interactive UI/UX designs using DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.
+            Hi, I'm <strong style="color:#000;">${personalInfo.name}</strong>. I create commercial video edits, 2D map animations, photo enhancements, and interactive UI/UX designs using DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.
           </p>
 
           <div class="hero-actions">
@@ -263,7 +263,7 @@ function renderApp() {
                 <span class="work-tag-pill">${p.categoryName}</span>
               </div>
 
-              <h3 style="font-size:1.35rem; color:#fff; margin-top:0.1rem;">${p.title}</h3>
+              <h3 style="font-size:1.35rem; color:#000; margin-top:0.1rem;">${p.title}</h3>
               
               <p style="font-size:0.95rem; color:var(--accent-silver); line-height:1.5; margin-bottom:0.2rem;">${p.description}</p>
               
@@ -304,7 +304,7 @@ function renderApp() {
           ${services.map(s => `
             <div class="bento-card service-card">
               <span class="service-num" style="font-family:var(--font-mono); color:var(--accent-lavender); font-weight:800; font-size:1.1rem;">${s.num}</span>
-              <h3 style="font-size:1.4rem; color:#fff;">${s.title}</h3>
+              <h3 style="font-size:1.4rem; color:#000;">${s.title}</h3>
               <p style="font-size:0.95rem; color:var(--accent-silver);">${s.description}</p>
               <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:auto;">
                 ${s.tags.map(t => `<span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-lavender); background:rgba(210,178,240,0.12); padding:0.25rem 0.6rem; border-radius:4px; border:1px solid rgba(210,178,240,0.3);">${t}</span>`).join('')}
@@ -329,7 +329,7 @@ function renderApp() {
                   ${t.badgeLetter}
                 </div>
                 <div>
-                  <h4 style="font-size:1.1rem; color:#fff;">${t.name}</h4>
+                  <h4 style="font-size:1.1rem; color:#000;">${t.name}</h4>
                   <span style="font-size:0.75rem; color:var(--accent-silver);">${t.category}</span>
                 </div>
               </div>
@@ -349,7 +349,7 @@ function renderApp() {
         <div class="contact-grid">
           <div class="contact-card" style="display:flex; flex-direction:column; gap:2rem; justify-content:space-between;">
             <div>
-              <h3 style="font-size:1.8rem; color:#fff; margin-bottom:0.6rem;">START A PROJECT</h3>
+              <h3 style="font-size:1.8rem; color:#000; margin-bottom:0.6rem;">START A PROJECT</h3>
               <p style="font-size:0.95rem; color:var(--accent-silver);">I am available for video editing, 2D animations, photo editing, and UI/UX design assignments.</p>
             </div>
 
@@ -373,7 +373,7 @@ function renderApp() {
           </div>
 
           <div class="contact-card">
-            <h3 style="font-size:1.4rem; color:#fff; margin-bottom:1.5rem;">PROJECT INQUIRY FORM</h3>
+            <h3 style="font-size:1.4rem; color:#000; margin-bottom:1.5rem;">PROJECT INQUIRY FORM</h3>
             <form onsubmit="window.handleFormSubmit(event)">
               <div class="form-group">
                 <label class="form-label">Your Name</label>
@@ -410,7 +410,7 @@ function renderApp() {
         <div style="max-width:1360px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:1.5rem;">
           <div style="display:flex; align-items:center; gap:0.6rem;">
             <span class="brand-dot"></span>
-            <span style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:#fff;">${personalInfo.name}</span>
+            <span style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:#000;">${personalInfo.name}</span>
           </div>
           <p style="color:var(--accent-silver); max-width:500px;">Visual Storyteller, Video Editor & UI/UX Designer. Specializing in DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.</p>
           <div style="font-size:0.8rem; color:var(--accent-silver); opacity:0.6; border-top:1px solid rgba(210,178,240,0.2); padding-top:1.5rem; width:100%;">
@@ -426,7 +426,7 @@ function renderApp() {
             <div class="modal-header-bar">
               <div>
                 <span class="section-tag" style="margin:0;">${state.activeModalProject.categoryName}</span>
-                <h3 style="font-size:1.4rem; color:#fff; margin-top:0.2rem;">${state.activeModalProject.title}</h3>
+                <h3 style="font-size:1.4rem; color:#000; margin-top:0.2rem;">${state.activeModalProject.title}</h3>
               </div>
               <button class="modal-close-icon" onclick="window.closeModal()" aria-label="Close modal">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -441,7 +441,7 @@ function renderApp() {
               <div style="display:flex; flex-direction:column; gap:0.5rem; max-width:600px;">
                 <p style="font-size:0.92rem; color:var(--accent-silver);">${state.activeModalProject.description}</p>
                 <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  ${state.activeModalProject.software.map(sw => `<span style="font-size:0.75rem; background:rgba(210,178,240,0.15); color:#ffffff; font-weight:600; padding:0.2rem 0.6rem; border-radius:4px;">${sw}</span>`).join('')}
+                  ${state.activeModalProject.software.map(sw => `<span style="font-size:0.75rem; background:rgba(210,178,240,0.15); color:#000000; font-weight:600; padding:0.2rem 0.6rem; border-radius:4px;">${sw}</span>`).join('')}
                 </div>
               </div>
               <a href="${state.activeModalProject.driveUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.7rem 1.4rem; font-size:0.88rem;">
