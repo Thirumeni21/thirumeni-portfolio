@@ -307,7 +307,7 @@ function renderApp() {
               <h3 style="font-size:1.4rem; color:#000;">${s.title}</h3>
               <p style="font-size:0.95rem; color:var(--accent-silver);">${s.description}</p>
               <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:auto;">
-                ${s.tags.map(t => `<span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-lavender); background:rgba(210,178,240,0.12); padding:0.25rem 0.6rem; border-radius:4px; border:1px solid rgba(210,178,240,0.3);">${t}</span>`).join('')}
+                ${s.tags.map(t => `<span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-lavender); background:rgba(155,117,201,0.12); padding:0.25rem 0.6rem; border-radius:4px; border:1px solid rgba(155,117,201,0.3);">${t}</span>`).join('')}
               </div>
             </div>
           `).join('')}
@@ -367,7 +367,7 @@ function renderApp() {
               <button onclick="window.openGmailCompose()" class="btn-outline">Compose Mail ↗</button>
             </div>
 
-            <div style="padding:1.2rem; background:rgba(210,178,240,0.06); border:1px solid rgba(210,178,240,0.3); border-radius:var(--radius-md);">
+            <div style="padding:1.2rem; background:rgba(155,117,201,0.06); border:1px solid rgba(155,117,201,0.3); border-radius:var(--radius-md);">
               <div style="font-size:0.85rem; color:var(--accent-lavender); font-weight:700; margin-bottom:0.2rem;">⚡ RELIABLE TURNAROUND &amp; CLEAR COMMUNICATION</div>
               <div style="font-size:0.82rem; color:var(--accent-silver);">Dedicated remote editing &amp; design workspace ensuring fast project delivery and clear file coordination.</div>
             </div>
@@ -414,7 +414,7 @@ function renderApp() {
             <span style="font-family:var(--font-heading); font-weight:800; font-size:1.2rem; color:#000;">${personalInfo.name}</span>
           </div>
           <p style="color:var(--accent-silver); max-width:500px;">Visual Storyteller, Video Editor & UI/UX Designer. Specializing in DaVinci Resolve, Claude, Gemini AI, Figma, Adobe XD, Lightroom, Photoshop, and CapCut.</p>
-          <div style="font-size:0.8rem; color:var(--accent-silver); opacity:0.6; border-top:1px solid rgba(210,178,240,0.2); padding-top:1.5rem; width:100%;">
+          <div style="font-size:0.8rem; color:var(--accent-silver); opacity:0.6; border-top:1px solid rgba(155,117,201,0.2); padding-top:1.5rem; width:100%;">
             © ${new Date().getFullYear()} ${personalInfo.name}. All rights reserved. Portfolio.
           </div>
         </div>
@@ -442,7 +442,7 @@ function renderApp() {
               <div style="display:flex; flex-direction:column; gap:0.5rem; max-width:600px;">
                 <p style="font-size:0.92rem; color:var(--accent-silver);">${state.activeModalProject.description}</p>
                 <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-                  ${state.activeModalProject.software.map(sw => `<span style="font-size:0.75rem; background:rgba(210,178,240,0.15); color:#000000; font-weight:600; padding:0.2rem 0.6rem; border-radius:4px;">${sw}</span>`).join('')}
+                  ${state.activeModalProject.software.map(sw => `<span style="font-size:0.75rem; background:rgba(155,117,201,0.15); color:#000000; font-weight:600; padding:0.2rem 0.6rem; border-radius:4px;">${sw}</span>`).join('')}
                 </div>
               </div>
               <a href="${state.activeModalProject.driveUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.7rem 1.4rem; font-size:0.88rem;">
