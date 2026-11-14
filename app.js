@@ -117,14 +117,14 @@ const services = [
 ];
 
 const softwareTools = [
-  { name: "DaVinci Resolve", category: "Primary Color & Edit Suite", badgeColor: "#6366f1", badgeLetter: "Dv", desc: "Node Color Grading, Fairlight Audio, Fusion VFX & Cut Page" },
-  { name: "Claude", category: "AI Creative Assistance", badgeColor: "#d97757", badgeLetter: "Cl", desc: "Creative Direction, Writing Support & Structured Idea Development" },
-  { name: "Google Gemini", category: "AI Scripting & Visual Hooks", badgeColor: "#3b82f6", badgeLetter: "Ge", desc: "AI Storyboarding, Content Ideation & Visual Scripting" },
-  { name: "Figma", category: "UI/UX & Storyboarding", badgeColor: "#f43f5e", badgeLetter: "Fg", desc: "Interactive Prototypes, UI Layouts & Motion Wireframes" },
-  { name: "Adobe XD", category: "Layouts & UI Prototypes", badgeColor: "#d946ef", badgeLetter: "Xd", desc: "Interactive Motion Layouts & Screen Video Prototyping" },
-  { name: "Adobe Lightroom", category: "Color & RAW Grading", badgeColor: "#38bdf8", badgeLetter: "Lr", desc: "Preset Creation, Color Balance & RAW Photo Enhancement" },
-  { name: "Adobe Photoshop", category: "Photo Editing & Key Art", badgeColor: "#2563eb", badgeLetter: "Ps", desc: "Thumbnails, Poster Graphics & Photo Manipulation" },
-  { name: "CapCut", category: "Fast Social & Trend Edits", badgeColor: "#8b5cf6", badgeLetter: "Cc", desc: "Speed Ramps, Auto Captions & Viral Short Form Effects" }
+  { name: "DaVinci Resolve", category: "Primary Color & Edit Suite", badgeColor: "#6366f1", logo: "https://cdn.simpleicons.org/davinciresolve/ffffff", badgeLetter: "Dv", desc: "Node Color Grading, Fairlight Audio, Fusion VFX & Cut Page" },
+  { name: "Claude", category: "AI Creative Assistance", badgeColor: "#d97757", logo: "https://cdn.simpleicons.org/claude/ffffff", badgeLetter: "Cl", desc: "Creative Direction, Writing Support & Structured Idea Development" },
+  { name: "Google Gemini", category: "AI Scripting & Visual Hooks", badgeColor: "#3b82f6", logo: "https://cdn.simpleicons.org/googlegemini/ffffff", badgeLetter: "Ge", desc: "AI Storyboarding, Content Ideation & Visual Scripting" },
+  { name: "Figma", category: "UI/UX & Storyboarding", badgeColor: "#f43f5e", logo: "https://cdn.simpleicons.org/figma/ffffff", badgeLetter: "Fg", desc: "Interactive Prototypes, UI Layouts & Motion Wireframes" },
+  { name: "Adobe XD", category: "Layouts & UI Prototypes", badgeColor: "#d946ef", logo: "https://cdn.simpleicons.org/adobexd/ffffff", badgeLetter: "Xd", desc: "Interactive Motion Layouts & Screen Video Prototyping" },
+  { name: "Adobe Lightroom", category: "Color & RAW Grading", badgeColor: "#38bdf8", logo: "https://cdn.simpleicons.org/adobelightroom/ffffff", badgeLetter: "Lr", desc: "Preset Creation, Color Balance & RAW Photo Enhancement" },
+  { name: "Adobe Photoshop", category: "Photo Editing & Key Art", badgeColor: "#2563eb", logo: "https://cdn.simpleicons.org/adobephotoshop/ffffff", badgeLetter: "Ps", desc: "Thumbnails, Poster Graphics & Photo Manipulation" },
+  { name: "CapCut", category: "Fast Social & Trend Edits", badgeColor: "#8b5cf6", logo: "https://cdn.simpleicons.org/capcut/ffffff", badgeLetter: "Cc", desc: "Speed Ramps, Auto Captions & Viral Short Form Effects" }
 ];
 
 let state = {
@@ -325,8 +325,9 @@ function renderApp() {
           ${softwareTools.map(t => `
             <div class="software-item-clean">
               <div style="display:flex; align-items:center; gap:0.8rem;">
-                <div class="software-badge-letter" style="background:${t.badgeColor};">
-                  ${t.badgeLetter}
+                <div class="software-badge-letter" style="background:${t.badgeColor};" title="${t.name}">
+                  <img src="${t.logo}" alt="${t.name} logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+                  <span style="display:none;">${t.badgeLetter}</span>
                 </div>
                 <div>
                   <h4 style="font-size:1.1rem; color:#000;">${t.name}</h4>
