@@ -14,36 +14,47 @@ const personalInfo = {
 const projects = [
   {
     id: 3,
-    title: "AKA – YouTube",
-    driveUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/view?usp=drive_link",
-    previewUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/preview",
+    title: "YouTube Motion Graphic",
+    externalUrl: "https://youtu.be/6AZL3K9bNYc?si=YSMVcXjs8s5gc7su",
     category: "video",
-    categoryName: "YouTube Video",
-    software: ["DaVinci Resolve", "Claude"],
-    description: "A YouTube motion graphic combining editorial pacing, animated visuals, and AI-assisted creative direction.",
+    categoryName: "Motion Graphic Video",
+    software: ["Animated Visuals", "AI-Assisted Creative", "AI-Assisted Video Editing"],
+    description: "A motion graphic video combining animated visuals, AI-assisted creative direction, and AI-assisted video editing.",
+    isExternal: true,
+    externalLabel: "Watch on YouTube ↗"
+  },
+  {
+    id: 7,
+    title: "Informative Reel — Motion Graphics",
+    driveUrl: "https://drive.google.com/file/d/1KiBb3CKlXckF2c_8TiQRy63Eja54uNhU/view?usp=sharing",
+    previewUrl: "https://drive.google.com/file/d/1KiBb3CKlXckF2c_8TiQRy63Eja54uNhU/preview",
+    category: "video",
+    categoryName: "Informative Reel · Motion Graphics",
+    software: ["Motion Graphics", "Animated Visuals"],
+    description: "An informative motion graphic video built with animated visuals and clear visual storytelling.",
     isFigma: false
   },
   {
     id: 1,
-    title: "AKA – Reel 1",
-    driveUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/view?usp=sharing",
-    previewUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/preview",
+    title: "Informative Reel — Visual Storytelling",
+    externalUrl: "https://www.instagram.com/reel/DfB-UjDhLsm/?rpxt=cHh3emt0aXk3OXp1",
     category: "video",
-    categoryName: "Reel 1",
-    software: ["DaVinci Resolve"],
-    description: "A polished short-form reel edit focused on pacing, rhythm, and visual storytelling.",
-    isFigma: false
+    categoryName: "Informative Reel · Visual Storytelling",
+    software: ["Visual Storytelling", "Meme-Based Engagement"],
+    description: "An informative reel with strong visual storytelling, audience connection, and meme-based engagement.",
+    isExternal: true,
+    externalLabel: "Open Instagram Reel ↗"
   },
   {
     id: 2,
-    title: "AKA – Reel 2",
-    driveUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/view?usp=sharing",
-    previewUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/preview",
+    title: "Informative Reel — Storytelling & B-Roll",
+    externalUrl: "https://www.instagram.com/reel/DfB-UjDhLsm/?rpxt=cHh3emt0aXk3OXp1",
     category: "video",
-    categoryName: "Reel 2",
-    software: ["DaVinci Resolve"],
-    description: "A second short-form reel edit shaped around dynamic cuts, timing, and visual flow.",
-    isFigma: false
+    categoryName: "Informative Reel · Storytelling",
+    software: ["Storytelling", "B-Roll Editing", "Meme Templates"],
+    description: "A storytelling reel with well-matched B-rolls and meme templates that keep the content engaging.",
+    isExternal: true,
+    externalLabel: "Open Instagram Reel ↗"
   },
   {
     id: 4,
@@ -239,7 +250,7 @@ function renderApp() {
         </div>
 
         <div class="category-tabs">
-          <button class="tab-btn ${state.selectedCategory === 'all' ? 'active' : ''}" onclick="window.selectCategory('all')">All Works (6)</button>
+          <button class="tab-btn ${state.selectedCategory === 'all' ? 'active' : ''}" onclick="window.selectCategory('all')">All Works (7)</button>
           <button class="tab-btn ${state.selectedCategory === 'video' ? 'active' : ''}" onclick="window.selectCategory('video')">Video Editing</button>
           <button class="tab-btn ${state.selectedCategory === 'uiux' ? 'active' : ''}" onclick="window.selectCategory('uiux')">UI/UX Design</button>
           <button class="tab-btn ${state.selectedCategory === 'animation' ? 'active' : ''}" onclick="window.selectCategory('animation')">2D Animation</button>
@@ -264,6 +275,10 @@ function renderApp() {
                 ${p.isFigma ? `
                   <a href="${p.externalUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex:1; justify-content:center; padding:0.75rem; font-size:0.88rem;">
                     <span>Figma Prototype ↗</span>
+                  </a>
+                ` : p.isExternal ? `
+                  <a href="${p.externalUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex:1; justify-content:center; padding:0.75rem; font-size:0.88rem;">
+                    <span>${p.externalLabel}</span>
                   </a>
                 ` : `
                   <button class="btn-primary" onclick="window.openModal(${p.id})" style="flex:1; justify-content:center; padding:0.75rem; font-size:0.88rem;">
