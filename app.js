@@ -15,13 +15,13 @@ const projects = [
   {
     id: 3,
     title: "YouTube Motion Graphic",
-    externalUrl: "https://youtu.be/6AZL3K9bNYc?si=YSMVcXjs8s5gc7su",
+    driveUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/view?usp=drivesdk",
+    previewUrl: "https://drive.google.com/file/d/1518dA73mUgpMqbOVmAhHp7aIIyS85YUm/preview",
     category: "video",
     categoryName: "Motion Graphic Video",
     software: ["Animated Visuals", "AI-Assisted Creative", "AI-Assisted Video Editing"],
     description: "A motion graphic video combining animated visuals, AI-assisted creative direction, and AI-assisted video editing.",
-    isExternal: true,
-    externalLabel: "Watch on YouTube ↗"
+    isFigma: false
   },
   {
     id: 7,
@@ -37,24 +37,35 @@ const projects = [
   {
     id: 1,
     title: "Informative Reel — Visual Storytelling",
-    externalUrl: "https://www.instagram.com/reel/DfB-UjDhLsm/?rpxt=cHh3emt0aXk3OXp1",
+    driveUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/view?usp=drivesdk",
+    previewUrl: "https://drive.google.com/file/d/1bcSq6R3acP5ZpYeLd1KWSL3AUMv96ZTB/preview",
     category: "video",
     categoryName: "Informative Reel · Visual Storytelling",
     software: ["Visual Storytelling", "Meme-Based Engagement"],
     description: "An informative reel with strong visual storytelling, audience connection, and meme-based engagement.",
-    isExternal: true,
-    externalLabel: "Open Instagram Reel ↗"
+    isFigma: false
   },
   {
     id: 2,
     title: "Informative Reel — Storytelling & B-Roll",
-    externalUrl: "https://www.instagram.com/reel/DfB-UjDhLsm/?rpxt=cHh3emt0aXk3OXp1",
+    driveUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/view?usp=drivesdk",
+    previewUrl: "https://drive.google.com/file/d/1w6sqX34qLdbWVNJRQRUxME15qs38KtzA/preview",
     category: "video",
     categoryName: "Informative Reel · Storytelling",
     software: ["Storytelling", "B-Roll Editing", "Meme Templates"],
     description: "A storytelling reel with well-matched B-rolls and meme templates that keep the content engaging.",
-    isExternal: true,
-    externalLabel: "Open Instagram Reel ↗"
+    isFigma: false
+  },
+  {
+    id: 8,
+    title: "Motion Graphic Reel",
+    driveUrl: "https://drive.google.com/file/d/1Yxrb27y31KrtOV2de8KHR5nmt1vnB61p/view?usp=drivesdk",
+    previewUrl: "https://drive.google.com/file/d/1Yxrb27y31KrtOV2de8KHR5nmt1vnB61p/preview",
+    category: "video",
+    categoryName: "Motion Graphics",
+    software: ["Motion Graphics", "Animated Visuals"],
+    description: "A motion graphic reel featuring animated visuals and visual storytelling.",
+    isFigma: false
   },
   {
     id: 4,
@@ -250,7 +261,7 @@ function renderApp() {
         </div>
 
         <div class="category-tabs">
-          <button class="tab-btn ${state.selectedCategory === 'all' ? 'active' : ''}" onclick="window.selectCategory('all')">All Works (7)</button>
+          <button class="tab-btn ${state.selectedCategory === 'all' ? 'active' : ''}" onclick="window.selectCategory('all')">All Works (${projects.length})</button>
           <button class="tab-btn ${state.selectedCategory === 'video' ? 'active' : ''}" onclick="window.selectCategory('video')">Video Editing</button>
           <button class="tab-btn ${state.selectedCategory === 'uiux' ? 'active' : ''}" onclick="window.selectCategory('uiux')">UI/UX Design</button>
           <button class="tab-btn ${state.selectedCategory === 'animation' ? 'active' : ''}" onclick="window.selectCategory('animation')">2D Animation</button>
